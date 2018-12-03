@@ -69,11 +69,8 @@ void FractalCreator::run() {
 	//printf("Runtime: %f\n", cpuTime);
 
 	calculateIterationCUDA();
-	printf("IT CALC\n" );
 	calculateTotalIterations();
-	printf("IT CALC2\n" );
 	calculateRangeTotalsOMP();
-	printf("IT CALC3\n" );
 }
 
 FractalCreator::FractalCreator(int width, int height) :
