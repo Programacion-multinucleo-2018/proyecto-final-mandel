@@ -71,6 +71,7 @@ int main(int argc, char** argv) {
 
   fractalCreator.run();
 
+/*
   int max = 0;
   int maxi_c = 0;
   for (int i = 0; i < M_WIDTH * M_HEIGHT; i++) {
@@ -94,6 +95,7 @@ int main(int argc, char** argv) {
     printf("%d : %d\n", i, fractalCreator.m_histogram[i]);
     tot += fractalCreator.m_histogram[i];
   }
+  */
   //printf("maximo %d %d, max %d\n", max,fractalCreator.m_histogram[max], maxi_c);
   //printf("Total: %d    Mas rep: %d    rep max: %d\n",tot, max_histo, max_histo_rep );
 
@@ -102,7 +104,7 @@ int main(int argc, char** argv) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 	glutInitWindowSize(M_WIDTH, M_HEIGHT);
-	glutInitWindowPosition(100, 100);
+	glutInitWindowPosition(0, 0);
 	glutCreateWindow("MANDELBROT SET");
 	inicializar();
 

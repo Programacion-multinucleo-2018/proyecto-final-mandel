@@ -155,7 +155,6 @@ void FractalCreator::calculateRangeTotals(){
 }
 
 void FractalCreator::calculateRangeTotalsOMP(){
-	cout << "Entra" << endl;
 	int rangeIndex = 0;
 	int i = 0;
 
@@ -210,7 +209,7 @@ void FractalCreator::drawFractal() {
 			plot(x,y,red,green,blue);
 		}
 	}
-	cout << "FP" << endl;
+	printf("FRACTAL DIBUJADO\n");
 }
 
 void FractalCreator::addColorRange(double rangeEnd, const RGB& rgb){
