@@ -19,9 +19,7 @@ __global__ void kernel(int * d_fractal, int * d_histogram, int step,double scale
   const int tid  = yIndex * step + xIndex;
 
   //__shared__ int s_histo[Mandelbrot::MAX_ITERATIONS];
-
-  int sx = threadIdx.x + threadIdx.y * blockDim.x;
-
+  //int sx = threadIdx.x + threadIdx.y * blockDim.x;
   //Initialize shared histogram to 0
   //if ( sx < Mandelbrot::MAX_ITERATIONS)
     //s_histo[sx] = 0;
@@ -55,7 +53,6 @@ __global__ void kernel(int * d_fractal, int * d_histogram, int step,double scale
 
     d_fractal[tid] = iterations;
     atomicAdd(&d_histogram[iterations], 1);
-      //d_histogram[iterations]++;
   }
   __syncthreads();
 

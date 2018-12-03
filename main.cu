@@ -69,13 +69,9 @@ int main(int argc, char** argv) {
   fractalCreator.addColorRange(0.8, RGB(255,255,0));
   fractalCreator.addColorRange(1.0, RGB(255,255,255));
 
-
-	//fractalCreator.addZoom(313, 330, 0.1);
-  //fractalCreator.addZoom(825, 130, 0.1);
   fractalCreator.run();
-  //fractalCreator.drawFractal();
 
-/**/
+/*
   int max = 0;
   int maxi_c = 0;
   for (int i = 0; i < M_WIDTH * M_HEIGHT; i++) {
@@ -101,7 +97,7 @@ int main(int argc, char** argv) {
 
   printf("maximo %d %d, max %d\n", max,fractalCreator.m_histogram[max], maxi_c);
   printf("Total: %d    Mas rep: %d    rep max: %d\n",tot, max_histo, max_histo_rep );
-/**/
+*/
 
 
 
