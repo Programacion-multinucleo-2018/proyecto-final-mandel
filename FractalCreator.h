@@ -61,8 +61,8 @@ void FractalCreator::run() {
 	printf("Runtime.\n");
 	float cpuTime = 0.0;
 	auto start =  chrono::high_resolution_clock::now();
-	calculateIteration();
-	//calculateIterationOMP();
+	//calculateIteration();
+	calculateIterationOMP();
 	//calculateIterationCUDA();
 
 	calculateTotalIterations();
