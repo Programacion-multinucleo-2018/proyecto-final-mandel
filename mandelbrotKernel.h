@@ -102,7 +102,7 @@ void runCuda(int * m_fractal,int * m_histogram, double scale, double xCenter, do
   SAFE_CALL(cudaFree(d_histogram), "CUDA Free Failed");
 
   // Reset device
-  SAFE_CALL(cudaDeviceReset(), "Error reseting");
+  //SAFE_CALL(cudaDeviceReset(), "Error reseting");
   printf("SALE DE KERNEL\n" );
 
 }
