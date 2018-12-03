@@ -58,19 +58,19 @@ public:
 
 void FractalCreator::run() {
 
-	//printf("Runtime.\n");
-	//float cpuTime = 0.0;
-	//auto start =  chrono::high_resolution_clock::now();
-	//calculateIteration();
+	printf("Runtime.\n");
+	float cpuTime = 0.0;
+	auto start =  chrono::high_resolution_clock::now();
+	calculateIteration();
 	//calculateIterationOMP();
-	//auto end =  chrono::high_resolution_clock::now();
-	//chrono::duration<float, std::milli> duration_ms = end - start;
-	//cpuTime = duration_ms.count();
-	//printf("Runtime: %f\n", cpuTime);
+	//calculateIterationCUDA();
 
-	calculateIterationCUDA();
 	calculateTotalIterations();
 	calculateRangeTotalsOMP();
+	auto end =  chrono::high_resolution_clock::now();
+	chrono::duration<float, std::milli> duration_ms = end - start;
+	cpuTime = duration_ms.count();
+	printf("Runtime: %f\n", cpuTime);
 }
 
 FractalCreator::FractalCreator(int width, int height) :
