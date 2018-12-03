@@ -12,6 +12,7 @@ using namespace std;
 
 void inicializar(void){
     glClearColor (0.0, 0.0, 0.0, 0.0);
+    printf("aaaaa\n" );
     //glShadeModel (GL_FLAT);
 }
 
