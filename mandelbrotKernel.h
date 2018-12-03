@@ -102,5 +102,6 @@ void runCuda(int * m_fractal,int * m_histogram, double scale, double xCenter, do
 
   // Reset device
   SAFE_CALL(cudaDeviceReset(), "Error reseting");
+  printf("SALE DE KERNEL\n" );
 
 }
