@@ -94,6 +94,7 @@ void runCuda(int * m_fractal,int * m_histogram, double scale, double xCenter, do
   // SAFE_CALL kernel error
   SAFE_CALL(cudaGetLastError(), "Error with last error");
 
+  printf("Copy\n");
   SAFE_CALL(cudaMemcpy(m_fractal, d_fractal, fractalBytes, cudaMemcpyDeviceToHost), "CUDA Memcpy Device To Device Failed");
   SAFE_CALL(cudaMemcpy(m_histogram, d_histogram, histogramBytes, cudaMemcpyDeviceToHost), "CUDA Memcpy Device To Device Failed");
 
