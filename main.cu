@@ -94,9 +94,8 @@ int main(int argc, char** argv) {
     printf("%d : %d\n", i, fractalCreator.m_histogram[i]);
     tot += fractalCreator.m_histogram[i];
   }
-
-  printf("maximo %d %d, max %d\n", max,fractalCreator.m_histogram[max], maxi_c);
-  printf("Total: %d    Mas rep: %d    rep max: %d\n",tot, max_histo, max_histo_rep );
+  //printf("maximo %d %d, max %d\n", max,fractalCreator.m_histogram[max], maxi_c);
+  //printf("Total: %d    Mas rep: %d    rep max: %d\n",tot, max_histo, max_histo_rep );
 
 
 
