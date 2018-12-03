@@ -90,9 +90,9 @@ void runCuda(int * m_fractal,int * m_histogram, double scale, double xCenter, do
   chrono::duration<float, std::milli> duration_ms = end - start;
   cpuTime = duration_ms.count();
   printf("Runtime: %f\n", cpuTime);
-  SAFE_CALL(cudaDeviceSynchronize(), "Kernel Launch Failed");
+  //SAFE_CALL(cudaDeviceSynchronize(), "Kernel Launch Failed");
   // SAFE_CALL kernel error
-  SAFE_CALL(cudaGetLastError(), "Error with last error");
+  //SAFE_CALL(cudaGetLastError(), "Error with last error");
 
   printf("Copy\n");
   SAFE_CALL(cudaMemcpy(m_fractal, d_fractal, fractalBytes, cudaMemcpyDeviceToHost), "CUDA Memcpy Device To Device Failed");
