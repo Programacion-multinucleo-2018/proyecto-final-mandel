@@ -71,7 +71,6 @@ int main(int argc, char** argv) {
 
   fractalCreator.run();
 
-/*
   int max = 0;
   int maxi_c = 0;
   for (int i = 0; i < M_WIDTH * M_HEIGHT; i++) {
@@ -92,12 +91,12 @@ int main(int argc, char** argv) {
     } else if (fractalCreator.m_histogram[i] == max){
       max_histo_rep++;
     }
+    printf("%d : %d\n", i, fractalCreator.m_histogram[i]);
     tot += fractalCreator.m_histogram[i];
   }
 
   printf("maximo %d %d, max %d\n", max,fractalCreator.m_histogram[max], maxi_c);
   printf("Total: %d    Mas rep: %d    rep max: %d\n",tot, max_histo, max_histo_rep );
-*/
 
 
 
